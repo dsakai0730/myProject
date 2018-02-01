@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<constant name="struts.devMode" value="true" />
+
+<package name="com.internousdev.project1.action" extends="struts-default">
+
+<action name="LoginPageAction" class="com.internousdev.project1.action.LoginPageAction" method="execute">
+	<result name="success">login.jsp</result>
+</action>
+
+<action name="UserCreatePageAction" class="com.internousdev.project1.action.UserCreatePageAction" method="execute">
+	<result name="success">userCreate.jsp</result>
+</action>
+
+<action name="UserCreateConfirmAction" class="com.internousdev.project1.action.UserCreateConfirmAction" method="execute">
+	<result name="success">userCreateConfirm.jsp</result>
+	<result name="error">userCreate.jsp</result>
+</action>
+
+<action name="UserCreateCompleteAction" class="com.internousdev.project1.action.UserCreateCompleteAction" method="execute">
+	<result name="success">userCreateComplete.jsp</result>
+</action>
+
+<action name="LoginAction" class="com.internousdev.project1.action.LoginAction" method="execute">
+	<result name="success">home.jsp</result>
+	<result name="error">login.jsp</result>
+</action>
+
+<action name="MyPageAction" class="com.internousdev.project1.action.MyPageAction" method="execute">
+	<result name="success">myPage.jsp</result>
+</action>
+
+<action name="LogoutAction" class="com.internousdev.project1.action.LogoutAction" method="execute">
+	<result name="success">home.jsp</result>
+</action>
+
+<action name="GoHomeAction" class="com.internousdev.project1.action.GoHomeAction" method="execute">
+	<result name="success">home.jsp</result>
+</action>
+
+<action name="RegItemPageAction" class="com.internousdev.project1.action.RegItemPageAction" method="execute">
+	<result name="success">regItem.jsp</result>
+</action>
+
+<action name="RegItemConfirmAction" class="com.internousdev.project1.action.RegItemConfirmAction" method="execute">
+	<result name="success">regItemConfirm.jsp</result>
+	<result name="error">regItem.jsp</result>
+</action>
+
+<action name="RegItemCompleteAction" class="com.internousdev.project1.action.RegItemCompleteAction" method="execute">
+	<result name="success">regItemComplete.jsp</result>
+</action>
+
+<action name="SearchBookAction" class="com.internousdev.project1.action.SearchBookAction" method="execute">
+	<result name="success">home.jsp</result>
+</action>
+
+<action name="CheckAction" class="com.internousdev.project1.action.CheckAction" method="execute">
+	<result name="success">check.jsp</result>
+	<result name="error">login.jsp</result>
+</action>
+
+<action name="CheckOutAction" class="com.internousdev.project1.action.CheckOutAction" method="execute">
+	<result name="success">home.jsp</result>
+</action>
+
+<action name="AlReadAction" class="com.internousdev.project1.action.AlReadAction" method="execute">
+	<result name="success">check.jsp</result>
+</action>
+
+<action name="OffReadAction" class="com.internousdev.project1.action.OffReadAction" method="execute">
+	<result name="success">check.jsp</result>
+</action>
+
+<action name="MyCheckAction" class="com.internousdev.project1.action.MyCheckAction" method="execute">
+	<result name="success">myCheck.jsp</result>
+</action>
+
+<action name="MyOffReadAction" class="com.internousdev.project1.action.MyOffReadAction" method="execute">
+	<result name="success">myCheck.jsp</result>
+</action>
+
+<action name="MyOffReadAction" class="com.internousdev.project1.action.MyOffReadAction" method="execute">
+	<result name="success">myCheck.jsp</result>
+</action>
+
+<action name="MyAlReadAction" class="com.internousdev.project1.action.MyAlReadAction" method="execute">
+	<result name="success">myCheck.jsp</result>
+</action>
+
+<action name="FriendPageAction" class="com.internousdev.project1.action.FriendPageAction" method="execute">
+	<result name="success">friend.jsp</result>
+</action>
+
+<action name="SearchFriendAction" class="com.internousdev.project1.action.SearchFriendAction" method="execute">
+	<result name="success">friend.jsp</result>
+	<result name="error">friend.jsp</result>
+</action>
+
+<action name="FriendInfoAction" class="com.internousdev.project1.action.FriendInfoAction" method="execute">
+	<result name="success">friendInfo.jsp</result>
+</action>
+
+<action name="FrCheckAction" class="com.internousdev.project1.action.FrCheckAction" method="execute">
+	<result name="success">frCheck.jsp</result>
+</action>
+
+<action name="FrAlReadAction" class="com.internousdev.project1.action.FrAlReadAction" method="execute">
+	<result name="success">frCheck.jsp</result>
+</action>
+
+<action name="FrOffReadAction" class="com.internousdev.project1.action.FrOffReadAction" method="execute">
+	<result name="success">frCheck.jsp</result>
+</action>
+
+<action name="FollowAction" class="com.internousdev.project1.action.FollowAction" method="execute">
+	<result name="success">friendInfo.jsp</result>
+</action>
+
+<action name="FollowOffAction" class="com.internousdev.project1.action.FollowOffAction" method="execute">
+	<result name="success">friendInfo.jsp</result>
+</action>
+
+<action name="FollowUserInfoAction" class="com.internousdev.project1.action.FollowUserInfoAction" method="execute">
+	<result name="success">friendInfo.jsp</result>
+</action>
+
+<action name="FollowerInfoAction" class="com.internousdev.project1.action.FollowerInfoAction" method="execute">
+	<result name="success">friendInfo.jsp</result>
+</action>
+
+<action name="BackFollowersInfoAction" class="com.internousdev.project1.action.BackFollowersInfoAction" method="execute">
+	<result name="success">friendInfo.jsp</result>
+</action>
+
+</package>
+</struts>
